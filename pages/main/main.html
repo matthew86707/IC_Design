@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>IC Designer</title>
+  <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+  <script src="../../jquery/jquery-3.3.1.min.js"></script>
+  <script src="../../popper/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../bootstrap/js/bootstrap.js"></script>
+  <img id="transistor" src="../../Transistor.png" alt="error" title="This is an image" hidden="true" />
+  <img id="inverter" src="../../Inverter.png" alt="error" title="This is an image" hidden="true" />
+  <img id="switch" src="../../Switch.png" alt="error" title="This is an image" hidden="true" />
+  <img id="layer-link" src="../../LayerLink.png" alt="error" title="This is an image" hidden="true" />
+</head>
+
+<body>
+  <div class="container-fluid h-100 d-flex flex-column" style="display: flex;">
+    <div class="row" style="height: 30px">
+      <div class="col-12 toolbar">
+        <div class="row">
+          <img src="../../IC_Logo.png" style="height : 25px; width:25px; padding-left: 5px; padding-top: 5px;">
+          <button class="dropdown-button" style="width : 50px;">
+            File
+          </button>
+          <button class="dropdown-button" style="width : 50px;">
+            Edit
+          </button>
+          <button class="dropdown-button" style="width : 50px;">
+            Help
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row flex-grow-1">
+      <div class="col-2 sidebar nopadding" id="file-tree">
+        <div class="panel-header">
+          Project Explorer
+        </div>
+        <button class="file-name-display">
+          NewSchematic.icsc
+        </button>
+        <button class="file-name-display">
+          NewSchematic1.icsc
+        </button>
+        <button class="file-name-display">
+          NewSchematic2.icsc
+        </button>
+      </div>
+      <div class="col-8 editor nopadding" style="display:block;">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="col-2 sidebar nopadding" id="file-tree">
+        <div class="d-flex flex-row">
+          <div class="layers-panel-header flex-grow-1">
+            Layers
+          </div>
+          <button id="new-layer" class="new-layer-button mr-auto">
+            +
+          </button>
+        </div>
+        <div id="layersList">
+          <div class="d-flex flex-row">
+            <button class="file-name-display lastLayer" id="layer-0">
+              Layer 0
+            </button>
+            <button id="link-layer-0" class="new-layer-button mr-auto">
+              L
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    require('./editor.js')
+    require('./fileManager.js')
+  </script>
+</body>
+
+</html>

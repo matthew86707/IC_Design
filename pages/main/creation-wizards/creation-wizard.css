@@ -1,0 +1,57 @@
+.label{
+    color: #bfbfbf;
+}
+.infoPane{
+    background-color: #7c0000;
+    padding-right: 0px
+}
+.mainPane{
+    background-color: #680000;
+}
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    /*whatever width you want*/
+  }
+.btn-xl {
+    padding: 18px 28px;
+    font-size: 22px;
+    border-radius: 8px;
+}
+.infoText{
+    color: #bfbfbf;
+}
+.infoTextBig{
+    font-size: 14pt;
+}
+canvas{
+    display:block;
+    vertical-align:bottom;
+}
+html,body{ 
+	width:100%;
+	height:100%;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}

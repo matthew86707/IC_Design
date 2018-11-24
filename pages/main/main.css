@@ -1,0 +1,95 @@
+.sidebar{
+    background-color: #0c0000;
+}
+.editor{
+    background-color: #140000;
+}
+.toolbar{
+    background-color:#380000;
+}
+body, html {
+    height: 100%;
+    color:  rgb(176, 176, 176);
+}
+.file-name-seperator{
+    background-color: #270000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    width: 100%;
+    padding: 6px 6px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ .file-name-display{
+    background-color: #0c0000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    width: 100%;
+    padding: 6px 6px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
+ .file-name-display:hover { 
+    background-color: #240000;
+}
+.dropdown-button{
+    background-color: #380000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    padding: 6px 6px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
+ .dropdown-button:hover { 
+    background-color: #4f0000;
+}
+canvas { 
+    height: 100vh; 
+    width: 100vw; 
+    display: block;
+  }
+.panel-header{
+    background-color: #2f0000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    width: 100%;
+    padding: 6px 6px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
+ .layers-panel-header{
+    background-color: #2f0000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    padding: 6px 6px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
+ .new-layer-button{
+    background-color: #0c0000; 
+    border: none;
+    color: rgb(176, 176, 176);
+    width: 30px;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
+ .new-layer-button:hover { 
+    background-color: #240000;
+}

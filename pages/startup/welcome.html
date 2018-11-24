@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IC Designer</title>
+    <link rel="stylesheet" type="text/css" href="../../photon/css/photon.css">
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm infoPane">
+                    <div class="padded-more infoText">
+                        <div class="infoTextBig">IC Designer</div>
+                        </br>
+                        Version 0.01
+                        </br>
+                        Electron, Node.js, and Rust
+                        </br>
+                        <div id="electron-version"></div>
+                        <div id="native-version"></div>
+                        <div id="native-version-rustc"></div>
+                    </div>
+                </div>
+                <div class="pane mainPane">
+                    <div id="particles-js">
+                        <div class="outer">
+                            <div class="middle">
+                                <div class="inner">
+                                    <div class="mainButton">
+                                        <button class="btn btn-secondary btn-xl" id="open-project" onclick="goToMainPage()">New Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="particles.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./welcome.js')
+    </script>
+</body>
+
+</html>
